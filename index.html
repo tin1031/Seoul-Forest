@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>서울숲 컨서번시</title>
+    <link rel="stylesheet" href="css/home.css"/>
+    <link rel="stylesheet" href="css/homem.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+
+    <script src="js/home.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+     <script>
+        $(document).ready(function () {
+
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 6000); // Change image every 2 seconds
+            }
+
+        });
+     </script>
+
+</head>
+
+<body>
+
+
+	<!----모바일 화면 메뉴------>
+    <div id="mobmenu">
+        <div><div class="hambx"></div>
+            <ul class="momenu">
+                <li><a href="#">서울숲컨서번시</a>
+                    <ul>
+                        <li><a href="sub1.html">소개</a></li>
+                        <li><a href="sub2.html">연혁</a></li>
+                        <li><a href="#">재정보고서</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">공원이용안내</a>
+                    <ul>
+                        <li><a href="#">서울숲안내</a></li>
+                        <li><a href="#">대관·촬영 신청</a></li>
+                        <li><a href="#">묻고 답하기</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">참여하기</a>
+                    <ul>
+                        <li><a href="#">자원봉사 참여</a></li>
+                        <li><a href="#">기업사회공헌 안내</a></li>
+                        <li><a href="#">프로젝트 후원</a></li>
+                        <li><a href="#">파트너스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">서울숲소식</a></li>
+                <li><a href="#">소식지</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="backb"></div>
+	<!----// 모바일 화면 메뉴------>
+
+    <!-------border bottom------>
+	<div class="tume">
+			<a href="index.html" class="logo"></a>
+			<div class="icon">
+				<div class="but"></div>
+				<div class="but"></div>
+			</div>
+            <div class="ham"></div>
+	</div>
+
+    <!------header------>
+    <header>
+			<a href="index.html" class="logo"></a>
+			<div class="icon">
+				<div class="but"></div>
+				<div class="but"></div>
+			</div>
+            <div class="ham"></div>
+      
+			<div class="meu">
+				<ul class="menu">
+					<li><a href="#">서울숲컨서번시</a>
+						<ul class="submenu">
+							<li><a href="sub1.html">소개</a></li>
+							<li><a href="sub2.html">연혁</a></li>
+							<li><a href="#">재정보고서</a></li>
+						</ul>
+					</li>
+					<li><a href="#">공원이용안내</a>
+						<ul class="submenu">
+							<li><a href="#">서울숲안내</a></li>
+							<li><a href="#">대관·촬영 신청</a></li>
+							<li><a href="#">묻고 답하기</a></li>
+							<li><a href="#">오시는 길</a></li>
+						</ul>
+					</li>
+					<li><a href="#">참여하기</a>
+						<ul class="submenu">
+							<li><a href="#">자원봉사 참여</a></li>
+							<li><a href="#">기업사회공헌 안내</a></li>
+							<li><a href="#">프로젝트 후원</a></li>
+							<li><a href="#">파트너스</a></li>
+						</ul>
+					</li>
+
+					<li><a href="#">서울숲 소식</a></li>
+					<li><a href="#">소식지</a></li>
+                </ul>
+			</div>
+
+    </header>
+    
+    <!------// header------>
+
+    <!------ slide ------>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="img/main1.png" alt="" />
+            <div class="text">
+                <!--타이틀 넣을시 배치-->
+				<img src="img/main4.png" /><br/>
+				<span></span><br/>
+				<p>더 예쁜 봄을 위해 서울숲이 노력하겠습니다</p>
+				</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/main2.png" alt="" />
+            <div class="text">
+                <!--타이틀 넣을시 배치-->
+				<strong>서울숲은 몇 시에 열리나요?<br />
+								지금 가도 되나요?</strong><br/>
+				<span></span><br/>
+				<p>
+					서울숲은 연중 무휴, 24시간 열린 공간입니다.<br />
+					다만 곤충식물원, 나비정원, 사슴우리, 보행가교, 커뮤니티센터,<br />
+					방문자센터 등 일부 시설은 각각 운영시간이 정해져 있습니다.
+				</p>
+				<div class="box"><a>서울숲 묻고답하기</a>></div>
+            </div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/main3.png" alt="" />
+            <div class="text">
+                <!--타이틀 넣을시 배치-->
+				<strong>플라스틱 쓰레기 없는 서울숲 만들기</strong><br/>
+				<span></span><br/>
+				<p>서울숲에 꽃을 피워주세요<br />
+						(SNS 인증샷 한 개당 꽃 한 송이 식재예정 )</p>
+            </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+
+        <div id="dot">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="weather">
+            <div class="weat">
+                <p>지금<br />서울숲의<br />날씨는?</p>
+                <span></span>
+                <div class="wbox"><img src="img/wicon1.png" /><p>흐림  2 °</p></div>
+                <strong>
+                    최고온도 8 °, 최저온도 0 ° 으로<br />
+                    가볍게 산책하기 좋은 날입니다. 
+                </strong>
+                <span></span>
+                <div class="mwbox">
+                    <div class="mwwbox">
+                        <p>일</p>
+                        <img src="img/wicon2.png" />
+                    </div>
+                    <div class="mwwbox">
+                        <p>월</p>
+                        <img src="img/wicon3.png" />
+                    </div>
+                    <div class="mwwbox">
+                        <p>화</p>
+                        <img src="img/wicon3.png" />
+                    </div>
+                    <div class="mwwbox">
+                        <p>수</p>
+                        <img src="img/wicon3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!------// slide------>
+
+    <!------main1------>
+    <div id="main1">
+        <div class="mainicon">
+            <div class="mibox">
+                <img src="img/micon1.png" />
+                <p>공원안내</p>
+            </div>
+            <span></span>
+            <div class="mibox">
+                <img src="img/micon2.png" />
+                <p>오시는 길</p>
+            </div>
+            <span></span>
+            <div class="mibox">
+                <img src="img/micon3.png" />
+                <p>소식지</p>
+            </div>
+            <span></span>
+            <div class="mibox">
+                <img src="img/micon4.png" />
+                <p>FAQ</p>
+            </div>
+            <span></span>
+            <div class="mibox">
+                <img src="img/micon5.png" />
+                <p>컨서번시 소개</p>
+            </div>
+        </div>
+    </div>
+    <!-------// main1------->
+
+    <!-------main2------>
+    <div id="main2">
+        <img src="img/se2.png" />
+        <div class="sebox1">Seoul Forest<span></span></div>
+        <div class="iconbox">
+            <div class="sebox">
+                <img src="img/seicon1.png" /><br/>
+                <span>Park 1</span>
+                <p>문화예술공원</p>
+            </div>
+            <div class="sebox">
+                <img src="img/seicon2.png" /><br/>
+                <span>Park 2</span>
+                <p>자연생태숲</p>
+            </div>
+            <div class="sebox">
+                <img src="img/seicon3.png" /><br/>
+                <span>Park 3</span>
+                <p>자연체험학습원</p>
+            </div>
+            <div class="sebox">
+                <img src="img/seicon4.png" /><br/>
+                <span>Park 4</span>
+                <p>습지생태원</p>
+            </div>
+        </div>
+    </div>
+    <!-------// main2------>
+
+    <!-------main3------>
+    <div id="main3">
+        <img src="img/se3.png" />
+        <div class="sente">
+            <strong>Seoul Forest</strong><br/>
+            <span></span><br/>
+            <p>
+                서울숲은 2002년 시민의 녹색 권리를 위해 뚝섬 개발사업 대신 대규모 공원을 조성하기로 결정되었고, 서울 그린트러스트 운동을 통해<br />
+                5,000여 시민의 기금과 봉사로 2005년 6월 18일, 나무가 우거지고 호수가 있는 도시숲으로 탈바꿈했습니다.<br /><br />
+                서울숲은 한강과 중랑천이 만나고, 한강-용산-남산-청계천-서울숲-한강으로 연결되는 서울 도심을 가로지르는 녹지 축의 하나로서 중요한 역할을 합니다.<br /><br />
+                서울숲은 자연과 함께 숨쉬는 생명의 숲, 시민들이 함께 만든 참여의 숲, 숲과 문화가 어우러지는 서울의 대표적인 녹색쉼터가 되었습니다.
+            </p>
+            <div class="butto">read more</div>
+        </div>
+    </div>
+    <!-------// main3------->
+
+    <!-------main4------>
+    <div id="main4">
+        <div class="bonbox">
+            <div class="sebbox">
+				<div class="bonnbox">
+					<strong>자원봉사 신청</strong>
+					<span></span>
+					<p>
+						무언가 의미 있고 보람찬 행동으로 나를 채우고 싶을 때, <span>봉사활동</span>으로 서울숲을 함께 가꾸고 함께 지켜나가면 어떨까요? <b>시민의 참여로 서울숲을 더욱 아름답고 건강하게 만들어주세요.</b>
+					</p>
+					<div class="chambox">자원봉사 참여하기<p>></p></div>
+				</div>
+            </div>
+            <div class="sebbox">
+                    <div class="wiy"></div>
+				<div class="bonnbox">
+					<strong>대관·촬영·시설이용 신청</strong>
+					<span></span>
+					<p>
+						공연이나행사, 체험 행사 목적으로 서울숲만의 특별한 장소를
+						일시적으로 사용할 수 있습니다. 
+						시설 예약은 회원에 가입하게 되면 서울시에서 제공하는
+						<span>다양하고 많은 혜택</span>을 받으실 수 있으니 참고해주세요.
+					</p>
+					<div class="chambox">대관 및 촬영 신청하기<p>></p></div>
+				</div>
+            </div>
+        </div>
+    </div>
+    <!-------// main4------->
+
+    <!-------main5------>
+    <div id="main5">
+        <img src="img/se5.png" />
+        <div class="mapbox">
+            <ul class="green">
+                <li>전체보기</li>
+                <li>건물 및 시설물</li>
+                <li>공연장</li>
+                <li>관람시설</li>
+                <li>녹지시설</li>
+                <li>놀이시설</li>
+                <li>동물사육사</li>
+                <li>안내시설</li>
+                <li>편의시설</li>
+                <li>화장실</li>
+            </ul>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6326.810636257278!2d127.03375638640478!3d37.54551337399186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca37d51f4f62b%3A0xdd9b9865be0f469a!2z7ISc7Jq47Iiy6rO17JuQIFNFT1VMIEZPUkVTVA!5e0!3m2!1sko!2skr!4v1578033521328!5m2!1sko!2skr" width="1015" height="695" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    <!-------// main 5------->
+
+    <!-------footer------>
+    <footer>
+        <div class="foobox">
+            <div class="ue"><p>개인정보처리방침</p><span></span><p>날씨정보제공자</p><span></span><p>영상정보처리기기 운영 관리방침</p></div>
+            <span></span>
+            <p>
+                (재)서울그린트러스트 서울숲컨서번시<br />
+                <strong>서울시 성동구 뚝섬로 273 서울숲관리사무소</strong><span></span><strong>Tel.02-460-2905</strong><span></span><strong>Fax. 02-460-2939</strong><span></span><strong>hello@seoulforest.or.kr</strong><br />
+                @2017 Seoul Forest Park Conservancy
+            </p>
+        </div>
+    </footer>
+    <!-------// footer------->
+
+    <!-------top but------>
+    <div class="topbut"><img src="img/topbut.png" /></div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+﻿@media screen and (max-width:767px) {
+	
+    #mobmenu {
+    display:none;
+    z-index:9999;
+    position:fixed;
+    right:0;
+    width:70%;
+    height:100%;
+    background:#6ca262;
+    }
+    .hambx {
+    width:40px;
+    height:40px;
+    background-image:url(../img/hambx.png);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:30px;
+    top:30px;
+    cursor:pointer;
+    }
+        .momenu {
+        width:100%;
+        text-indent:25px;
+        line-height:65px;
+        margin-top:100px;
+        font-size:18px;
+        font-weight:600;
+        }
+            .momenu li {
+            border-top:1px solid #000;
+            }
+			.momenu li ul li a:hover{color:#fff;}
+			.momenu a{display:block;}
+            .momenu li ul li {
+            width:100%;
+            height:55px;
+            line-height:55px;
+            text-indent:30px;
+            font-weight:400;
+            border-top:1px solid #000;
+            }
+            #backb {
+            display:none;
+            position:fixed;
+            z-index:9998;
+            background:rgba(0,0,0,0.5);
+            width:100%;
+            height:100%;
+            transition:0.6s;
+            }
+	/* ------header------ */
+	.tume{
+	display:none;
+	}
+	header{
+	min-width:40%;
+    height:100px;
+    background:rgba(255,255,255,0.7);
+	}
+    
+header .logo {
+	width:200px;
+	height:100px;
+    background-image:url(../img/logo.png);
+    background-repeat:no-repeat;
+    overflow: hidden;
+    text-align: center;
+	position:absolute;
+	top:33px;
+	left:6%;
+        display:block;
+        transition:0.5s;
+}
+	header .but {
+		width: 40px;
+		height: 40px;
+		overflow: hidden;
+		float: left;
+		margin-left: 120px;
+		margin-right: 15px;
+		cursor:pointer;
+		background-image:url(../img/ficonb.png);
+		background-repeat:no-repeat;
+		background-size:100%;
+        display:block;
+        transition:0.5s;
+	}
+    header .but:last-child {
+		background-image:url(../img/iiconb.png);
+        margin-left: 0px;
+        margin-right: 0px;
+        display:block;
+        transition:0.5s;
+    }
+		.meu {
+		display:none;
+		}
+		header .icon {
+		right:15%;
+		}
+		header .ham{
+		width:40px;
+		height:40px;
+		position:absolute;
+		top:33px;
+		right:5%;
+		display:block;
+		background-image:url(../img/hamb.png);
+		background-repeat:no-repeat;
+		background-size:100%;
+		cursor:pointer;
+		}
+	/* ------------ */
+
+    .slideshow-container {
+	min-width:40%;
+	height:585px;
+	}
+	.slideshow-container img{
+	width:100%;
+	height:585px;
+	}
+
+	/* ------slide text------ */
+	.text {
+	top:35%;
+	height:45%;
+	font-size:15px;
+	}
+		.text img{
+			width:180px;
+			height:55px;
+		}
+		.text span {
+			margin-top: 14px;
+			width: 15px;
+		}
+		.text p {
+			margin-top: 14px;
+			font-weight:100;
+		}
+		.text strong {
+			font-size: 28px;
+		}
+		.box {
+			width: 140px;
+			height:45px;
+			line-height: 50px;
+			position: absolute;
+			left: 50%;
+			margin-left: -75px;
+			margin-top:10px;
+		}
+		.box a {
+			line-height: 50px;
+			font-size: 12px;
+			margin-left:10px;
+		}
+	/* ------------------ */
+
+	/* ------weather------ */
+	.weather{
+	min-width:40%;	
+	height:100px;
+	bottom:0px;
+	transition:0.5s;
+	}
+		.weat{
+		min-width:100%;	
+		height:100px;
+		}
+		.weat > p {
+		width: 8%;
+		font-size: 15px;
+		margin-top: 24px;
+		}
+		.weat span {
+		width: 1px;
+		height: 70px;
+		float: left;
+		margin-top: 15px;
+		}
+		.weat .wbox {
+		width: 8%;
+		font-size: 15px;
+		margin-top: 20px;
+		}
+		.wbox img {
+		width:42px;
+		height:30px;
+		margin-bottom: 5px;
+		}
+		.weat > strong {
+		width: 16%;
+		font-size: 14px;
+		font-weight:100;
+		margin-top: 30px;
+		margin-right: 20px;
+		}
+		.weat .mwbox {
+		width: 48%;
+		}
+		.weat .mwwbox {
+		width: 12%;
+		height: 100px;
+		font-size: 14px;
+		margin-top: 15px;
+		margin-left: 10px;
+		}
+		.mwwbox > img {
+		width:40px;
+		height:40px;
+		margin-top: 10px;
+		}
+	/* ------------------ */
+
+	/* header-dot */
+	#dot{
+	bottom:6%;
+	}
+	/* ------------------ */
+
+
+	/* -------main1------- */
+	#main1{
+	min-width:40%;
+	height:110px;
+	}
+		#main1 .mainicon{
+		min-width:100%;
+		height:110px;
+		}
+		.mainicon span {
+		width: 1px;
+		height:75px;
+		margin-top: 20px;
+		}
+		.mibox {
+		width: 12.5%;
+		height: 110px;
+		margin-top: 5px;
+		font-size: 14px;
+		}
+		.mibox img {
+		width:50px;
+		height:50px;
+		cursor: pointer;
+		}
+	/* ------------------ */
+
+	/* ---------main2--------- */
+	#main2{
+	min-width:40%;
+	height:605px;
+	}
+		#main2 > img{
+		width:100%;
+		height:605px;
+		}
+		.sebox1 {
+		width: 150px;
+		height: 80px;
+		position: absolute;
+		top: -10%;
+		left: 50%;
+		margin-left: -75px;
+		font-size: 25px;
+		font-family: 'Titillium Web';
+		opacity: 0;
+		}
+		.sebox1 span {
+		width: 20px;
+		height: 1px;
+		float: left;
+		margin-top: 10px;
+		margin-left: 65px;
+		}
+		.iconbox {
+		width: 767px;
+		height:500px;
+		top: 16%;
+		left: 50%;
+		margin-left: -383px;
+		}
+		.sebox {
+		border: 2px solid #fff;
+		width: 200px;
+		height: 200px;
+		border-radius: 300px;
+		margin-top: 30px;
+		line-height: 30px;
+		margin-left:150px;
+		transition:0.5s;
+		}
+		.sebox:nth-child(2), .sebox:nth-child(4){
+		margin-left:0px;
+		}
+		 .sebox img {
+		width:60px;
+		height:70px;
+		margin-top: 40px;
+		}
+	/* ------------------ */
+
+	/* --------main3---------- */
+	#main3{
+	min-width:40%;
+	height:590px;
+	}
+		.sente {
+		width:767px;
+		height:590px;
+		top: -20%;
+		left: 50%;
+		margin-left: -383px;
+		opacity: 0;
+		}
+		.sente strong {
+		font-family: 'Titillium Web';
+		font-size:30px;
+		font-weight: 400;
+		}
+		.sente span {
+		width: 25px;
+		height: 1px;
+		margin: 20px 0px 30px 370px;
+		}
+		.sente p {
+		width:700px;
+		line-height: 24px;
+		font-size:15px;
+		}
+		.sente .butto {
+		width: 140px;
+		height: 50px;
+		line-height: 50px;
+		margin-top: 60px;
+		}
+	/* ------------------ */
+
+	/* --------main4---------- */
+		#main4{
+	min-width:40%;
+	height:800px;
+	}
+		.bonbox {
+		max-width:100%;
+		height:800px;
+		margin-top:0px;
+		}
+		.backseb{
+		max-width:100%;
+		height: 400px;
+		z-index:971;
+		position:absolute;
+		}
+		.sebbox {
+		max-width:100%;
+		height: 400px;
+		position:relative;
+		}
+		.sebbox:nth-child(1){
+		background-image:url(../img/se4_1m.png);
+		background-repeat:no-repeat;
+		}
+		.sebbox:nth-child(2){
+		background-image:url(../img/se4_2m.png);
+		background-repeat:no-repeat;
+		}
+		.wiy{
+		display:none;
+		}
+    .sebbox:nth-child(1) .bonnbox {
+        left:-0;
+    }
+    .sebbox:nth-child(2) .bonnbox {
+        left: 0;
+    }
+		.sebbox .bonnbox {
+		background-color:rgba(0,0,0,0.5);
+		width:100%;
+		height:400px;
+		color:#fff;
+		position:absolute;
+		}
+		.bonnbox strong {
+		width:180px;
+		font-size: 28px;
+		margin-left: 35px;
+		font-weight: 400;
+		margin-top:45px;
+		transition:0.7s;
+		}
+		.bonnbox > span {
+		width: 1px;
+		height:80px;
+		background: #fff;
+		float: left;
+		margin:50px 0px 0px 30px;
+		}
+		.bonnbox > p {
+		width: 420px;
+		height: 180px;
+		line-height: 28px;
+		float: left;
+		text-align: left;
+		font-weight:100;
+		font-size:17px;
+		margin-left: 30px;
+		margin-top:45px;
+		transition:0.7s;
+		}
+		.chambox {
+		width: 290px;
+		height: 90px;
+		line-height:90px;
+		font-size: 18px;
+		margin-top: 20px;
+		margin-left: 400px;
+		border:1px solid #fff;
+		}
+		.chambox > p {
+		font-family: '나눔고딕';
+		float: right;
+		margin-right: 30px;
+		}
+	/* ------------------ */
+
+	/* --------main5---------- */
+	#main5{
+	min-width:40%;
+	height:600px;
+	}
+		#main5 img{
+		width:100%;
+		height:600px;
+		}
+		.mapbox {
+		width:767px;
+		height: 500px;
+		left: 50%;
+		margin-left: -383px;
+		top: 50%;
+		margin-top: -250px;
+		}
+		.green {
+		width: 150px;
+		font-size:14px;
+		transition:0.5s;
+		}
+		.green li {
+		width: 150px;
+		height: 49.1px;
+		line-height:49px;
+		}
+		.mapbox iframe{
+		width:617px;
+		height:500px;
+		transition:0.5s;
+		}
+	/* ------------------ */
+
+	/* --------footer---------- */
+	footer {
+    min-width:40%;
+    height: 140px;
+	}
+	.foobox {
+    width: 100%;
+    height: 140px;
+    font-size: 12px;
+	}
+    .foobox > span {
+	width: 700px;
+	margin: 10px 0px 10px 20px;
+    }
+	.ue {
+    width: 1200px;
+    margin-top: 25px;
+    margin-left: 20px;
+	}
+    .ue > span {
+    width: 1px;
+    height: 14px;
+    margin: 0px 15px 0px 10px;
+    }
+	.foobox > p {
+    width:767px;
+    line-height: 20px;
+    margin-left: 20px;
+	}
+    .foobox > p > span {
+    width: 1px;
+    height: 13px;
+    margin: 3px 15px 0px 10px;
+    }
+	/* ------------------ */
+
+}
